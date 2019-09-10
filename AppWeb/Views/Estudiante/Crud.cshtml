@@ -1,0 +1,95 @@
+﻿@model Modelo.EstudianteModelo
+@{
+    ViewBag.Title = "Estudiante";
+}
+
+<br />
+
+<ol class="breadcrumb">
+    <li> <a href="~/Estudiante">content</a></li>
+    <li class="active">@(Model.Id > 0 ? Model.PrimerNombre + " " + Model.PrimerApellido : "Nuevo Registro")</li>
+</ol>
+
+@using (Html.BeginForm("Crud", "Estudiante", FormMethod.Post, new { id = "frm_estudiante", @class = "form-horizontal" }))
+{
+    @Html.HiddenFor(x => x.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.PrimerNombre, new { @class = "col-lg-3 col-sm-3 control-label" })
+        <div class="col-lg-6">
+            @Html.TextBoxFor(x => x.PrimerNombre, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.PrimerNombre, null, new { @class = "text-danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.PrimerApellido, new { @class = "col-lg-3 col-sm-3 control-label" })
+        <div class="col-lg-6">
+            @Html.TextBoxFor(x => x.PrimerApellido, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.PrimerApellido, null, new { @class = "text-danger" })
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.NoIdentificacion, new { @class = "col-lg-3 col-sm-3 control-label" })
+        <div class="col-lg-6">
+            @Html.TextBoxFor(x => x.NoIdentificacion, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.NoIdentificacion, null, new { @class = "text-danger" })
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Email, new { @class = "col-lg-3 col-sm-3 control-label" })
+        <div class="col-lg-6">
+            @Html.TextBoxFor(x => x.Email, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Email, null, new { @class = "text-danger" })
+
+        </div>
+
+    </div>
+
+    <div class="text-left">
+
+        <a href="/Estudiante" class="btn btn-default">Regresar</a>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+
+}
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $("#frm_estudiante").submit(function () {
+                var form = $(this);
+
+                $.ajax({
+                    dataType: "JSON",
+                    type: "POST",
+                    url: form.attr("action"),
+                    data: form.serialize(),
+                    success: function (r) {
+                        if (r.Response) {
+                            window.location.href = "/Estudiante";
+                        } else {
+                            alert(r.message);
+                        }
+                    }
+
+                });
+
+                return false;
+
+
+
+            })
+
+        });
+
+    </script>
+
+}
+

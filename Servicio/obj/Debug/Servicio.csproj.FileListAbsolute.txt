@@ -1,0 +1,16 @@
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Servicio.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Servicio.pdb
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Core.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Modelo.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Repositorio.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\EntityFramework.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Core.pdb
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Core.dll.config
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Modelo.pdb
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\Repositorio.pdb
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\bin\Debug\EntityFramework.xml
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\obj\Debug\Servicio.dll
+C:\Users\Seintecnicsa\source\repos\Prueba03\Servicio\obj\Debug\Servicio.pdb
